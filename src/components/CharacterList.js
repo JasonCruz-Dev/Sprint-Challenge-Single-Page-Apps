@@ -23,7 +23,7 @@ export default function CharacterList() {
   console.log(characterList);
 
   return (
-    <section className='character-list'>
+    <section className='character-list grid-view'>
       {characterList.map(char => (
         <CharacterCard
           url={char.image}
