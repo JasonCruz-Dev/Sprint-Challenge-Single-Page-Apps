@@ -27,11 +27,7 @@ export default function SearchForm() {
   return (
     <>
       <form onSubmit={onSearch}>
-        <input
-          className='search-form'
-          placeholder='Search by First or Last Name'
-          onChange={searchOnChange}
-        />
+        <input className='search-form' placeholder='Search by Name' onChange={searchOnChange} />
         <button type='submit'>Search</button>
       </form>
       {foundValue.map(res => (
