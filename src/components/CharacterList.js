@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
+  const [CharacterList, setCharacterList] = useState([]);
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
@@ -9,7 +10,7 @@ export default function CharacterList() {
   }, []);
 
   return (
-    <section className="character-list">
+    <section className='character-list'>
       <h2>TODO: `array.map()` over your state here!</h2>
     </section>
   );
